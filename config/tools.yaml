@@ -1,0 +1,70 @@
+tools:
+  - name: open_browser
+    description: Open URL in default browser
+    params: [url]
+    permission: allowed
+
+  - name: google_search
+    description: Search Google
+    params: [query]
+    permission: allowed
+
+  - name: youtube_search
+    description: Search YouTube
+    params: [query]
+    permission: allowed
+
+  - name: open_app
+    description: Open Windows application
+    params: [app_name]
+    permission: allowed
+
+  - name: close_app
+    description: Close application
+    params: [app_name]
+    permission: needs_confirmation
+
+  - name: send_message
+    description: Send WhatsApp message
+    params: [contact, message]
+    permission: needs_confirmation
+
+  - name: get_system_info
+    description: Get system information
+    params: [info_type]
+    permission: allowed
+
+  - name: set_volume
+    description: Set system volume
+    params: [level_or_action]
+    permission: allowed
+
+  - name: media_control
+    description: Play/pause media
+    params: [action]
+    permission: allowed
+
+  - name: read_file
+    description: Read a file
+    params: [path]
+    permission: allowed
+
+  - name: list_files
+    description: List files in directory
+    params: [path]
+    permission: allowed
+
+  - name: delete_file
+    description: Delete a file
+    params: [path]
+    permission: needs_confirmation
+
+  - name: web_search
+    description: Search the web
+    params: [query]
+    permission: allowed
+
+  - name: general_question
+    description: Answer general question
+    params: [question]
+    permission: allowed

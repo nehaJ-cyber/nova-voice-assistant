@@ -1,0 +1,26 @@
+# Ellie Voice Assistant - Dependencies
+# Speech
+vosk>=0.3.45
+PyAudio>=0.2.14
+openwakeword>=0.6.0
+
+# TTS - Kokoro (primary) + pyttsx3 (fallback)
+kokoro-onnx>=0.4.0
+soundfile>=0.12.1
+sounddevice>=0.4.6
+pyttsx3>=2.90
+numpy>=1.24.0
+
+# LLM
+ollama>=0.4.0
+
+# Windows Automation
+pywinauto>=0.6.8
+pyautogui>=0.9.54
+psutil>=5.9.0
+pycaw>=20240210
+
+# Web & Utils
+requests>=2.31.0
+PyYAML>=6.0
+comtypes>=1.2.0

@@ -1,0 +1,50 @@
+# Nova Voice Assistant - .gitignore
+
+# Python virtual environment (huge - never commit)
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Models - large binary files
+models/
+*.onnx
+*.bin
+*.gguf
+*.ggml
+
+# Temp files
+temp/
+tmp/
+*.log
+
+# Environment / secrets
+.env
+*.env
+config/secrets.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+
+# pytest cache
+.pytest_cache/
+.coverage
+htmlcov/

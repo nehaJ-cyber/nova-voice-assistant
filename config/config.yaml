@@ -1,0 +1,49 @@
+assistant:
+  name: Nova
+  wake_words:
+    - hey nova
+    - wake up nova
+    - nova
+  language: en-us
+
+models:
+  orchestrator: smollm2:360m
+  executor: qwen2.5:1.5b
+  ollama_host: http://localhost:11434
+  keep_alive: 0
+
+speech:
+  vosk_model_path: models/vosk-model-small-en-us-0.15
+  sample_rate: 16000
+  silence_timeout: 2.0
+  listen_timeout: 10.0
+
+tts:
+  engine: kokoro
+  voice: af_bella
+  speed: 1.0
+  model_path: models/kokoro-v1.0.onnx
+  voices_path: models/voices-v1.0.bin
+
+wake_word:
+  engine: openwakeword
+  threshold: 0.7
+  model: hey_nova
+
+safety:
+  blocked_drives:
+    - C
+  confirmation_required:
+    - send_message
+    - delete_file
+    - close_app
+    - deploy_subagent
+  blocked_actions:
+    - run_shell
+    - install_software
+    - modify_registry
+    - access_credentials
+
+ui:
+  chime_on_wake: true
+  show_tray_icon: true
